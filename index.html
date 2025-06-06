@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taekwondo School of the Manticore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="funcionalidad.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Taekwondo School of the Manticore</h1>
+        <nav>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="nosotros">
+        <div class="contenido-seccion">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una academia de taekwondo dedicada a formar atletas y personas íntegras bajo el símbolo del mítico Mantícora.</p>
+        </div>
+    </section>
+
+    <section id="clases">
+        <div class="contenido-seccion">
+            <h2>Horarios de Clases</h2>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Hora</th>
+                            <th>Grupo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>6:00pm</td>
+                            <td>Infantil</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>7:00pm</td>
+                            <td>Juvenil</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8:00pm</td>
+                            <td>Adultos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <div class="contenido-seccion">
+            <h2>Galería</h2>
+            <div class="contenedor-galeria">
+                <div class="item-galeria">
+                    <img src="imagenes/entrenamiento1.png" alt="Entrenamiento 1">
+                </div>
+                <div class="item-galeria">
+                    <img src="imagenes/entrenamiento2.png" alt="Entrenamiento 2">
+                </div>
+                <div class="item-galeria">
+                    <img src="imagenes/competencia1.png" alt="Competencia 1">
+                </div>
+                <div class="item-galeria">
+                    <img src="imagenes/competencia2.png" alt="Competencia 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" required>
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensaje-validacion"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Taekwondo School of the Manticore</p>
+    </footer>
+</body>
+</html>
